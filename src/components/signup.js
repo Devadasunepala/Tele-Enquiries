@@ -17,7 +17,7 @@ const SignupForm = () => {
    const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-         const response = await axios.post('http://localhost:5000/api/signup', formData);
+         const response = await axios.post('https://tele-backend.onrender.com/api/signup', formData);
          setMessage(response.data.message);
       } catch (error) {
          setMessage(error.response?.data?.message || "Server error");

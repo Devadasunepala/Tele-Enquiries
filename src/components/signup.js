@@ -23,7 +23,6 @@ const SignupForm = () => {
          setMessage(error.response?.data?.message || "Server error");
       }
    };
-
    return (
       <div className="signup-container">
          <h2>Contact info</h2>
